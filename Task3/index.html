@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Your HTML elements go here -->
+    <form id="task-form">
+        <input type="text" id="task-input" placeholder="Add a new task...">
+        <button type="submit">Add</button>
+    </form>
+    <ul id="task-list"></ul>
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+    </div>
+
+    <!-- Link your JS file -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - To-Do List Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>TaskFlow</h1>
+            <p>Organize your day efficiently</p>
+        </header>
+
+        <!-- Main Content Section -->
+        <main>
+            <!-- Form / Input Section -->
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Add a new task..." required>
+                <button type="submit" id="add-btn">Add Task</button>
+            </form>
+
+            <!-- Filter Controls -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+
+            <!-- Task List Container (Cards/Items) -->
+            <ul id="task-list">
+                <!-- Dynamically populated tasks will appear here -->
+            </ul>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
